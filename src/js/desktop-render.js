@@ -1,7 +1,9 @@
 function initDesktop(){
-    for (let i = 0; i < 9; i++) {
-        for(let j = 0; j < 20; j++) {
-            document.write(`<a class="grid-item" id="cell-${j*9+i+1}"></a>`);
+    const col = 20
+    const row = 9
+    for (let i = 0; i < row; i++) {
+        for(let j = 0; j < col; j++) {
+            document.write(`<a class="grid-item" id="cell-${j*row+i+1}"></a>`);
         }
     }
 }
@@ -26,17 +28,24 @@ function addShortcut(){
     var count = 1;
     shortcuts.forEach(shortcut => {
         console.log(count);
-        elem = document.getElementById(`cell-${count}`)
-        if(shortcut.hasOwnProperty('link')) {
-            elem.setAttribute('href',shortcut.link)
-            elem.setAttribute('target','_blank')
-        } else {
-            elem.setAttribute('href','#')
-            elem.setAttribute('role','button')
-        }
-        elem.innerHTML =  `<img src=${shortcut.iconPath} alt=""> <p class='shorcutName'>${shortcut.shortcutName}</p>`
+        addShortcutToIndex(shortcut,count)
         count++;
-
-        
     });
+
+    addShortcutToIndex({
+        iconPath: './src/imgs/foldericon128.png',
+        shortcutName: 'My skills',
+    },10)
+}
+
+function addShortcutToIndex(shortcut ,i) {
+    elem = document.getElementById(`cell-${i}`)
+    if(shortcut.hasOwnProperty('link')) {
+        elem.setAttribute('href',shortcut.link)
+        elem.setAttribute('target','_blank')
+    } else {
+        elem.setAttribute('href','#')
+        elem.setAttribute('role','button')
+    }
+    elem.innerHTML =  `<img src=${shortcut.iconPath} alt=""> <p class='shorcutName'>${shortcut.shortcutName}</p>`
 }
