@@ -99,6 +99,7 @@ body {
   }
 
 .taskbar-icon-img {
+    user-select: none;
     height: 100%;
     display: flex;
     align-items: center;
