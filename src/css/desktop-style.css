@@ -16,6 +16,7 @@
     height: 87.7vh;
     gap: 0;
     background-color: rgba(0, 0, 0, 0);
+    row-gap: 1.5vh;
 }
 
 .grid-item {
@@ -45,4 +46,8 @@
     height: auto;
     margin-top: 0.1vh;
     user-select: none;
+}
+
+.grid-item[href]:hover {
+    background: rgba(244, 244, 244, 0.116);
 }

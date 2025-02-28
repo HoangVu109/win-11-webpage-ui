@@ -17,7 +17,11 @@ function addShortcut(){
             shortcutName: 'Github',
             link: 'https://github.com/HoangVu109'
                  
-        },
+        }, {
+            iconPath: './src/imgs/linkedicon128.png',
+            shortcutName: 'LinkedIn',
+            link:'https://www.linkedin.com/in/hoangvu109/'
+        }
     ]
     var count = 1;
     shortcuts.forEach(shortcut => {

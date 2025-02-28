@@ -9,6 +9,5 @@ setInterval(()=>{
         month: '2-digit',
         year: 'numeric'
   }).format(d);
-    console.log(d.toLocaleTimeString())
 },1000)
 
