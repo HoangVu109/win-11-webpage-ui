@@ -1,3 +1,4 @@
+//document.addEventListener('contextmenu', event => {event.preventDefault(); console.log('Right mouse blocked')});
 
 var time = document.getElementById('current-time')
 var date = document.getElementById('current-date')

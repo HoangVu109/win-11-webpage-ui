@@ -32,10 +32,23 @@ function addShortcut(){
         count++;
     });
 
+
+
     addShortcutToIndex({
         iconPath: './src/imgs/foldericon128.png',
         shortcutName: 'My skills',
     },10)
+    addShortcutToIndex({
+        iconPath: './src/imgs/foldericon128.png',
+        shortcutName: 'My Projects',
+    },11)
+
+    addShortcutToIndex({
+        iconPath : './src/imgs/githubicon128.png',
+        shortcutName: 'Repo of this web',
+        link: 'https://github.com/HoangVu109/win-11-webpage-ui'
+             
+    },180)
 }
 
 function addShortcutToIndex(shortcut ,i) {

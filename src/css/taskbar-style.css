@@ -92,12 +92,13 @@ body {
     border: none;
     border-radius: 0.925vw;
     padding: 0 10% 0 10%;
-    font-size: 2vh;
+    font-size: 1.7vh;
     color: white;
   }
 
   #searchQueryInput::placeholder{
     color: #C9CBD1;
+    font-size: 1.7vh;
   }
 
 .taskbar-icon-img {
