@@ -3,18 +3,32 @@
   <head>
     <meta charset="UTF-8">
     <title>Windows 11</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/taskbar-style.css">
+    <link rel="stylesheet" href="./src/css/desktop-style.css">
     <link rel="icon" href="./src/imgs/win11icon128.png" type="image/x-icon">
-    
+    <script src="./src/js/desktop-render.js"></script>
   </head>
   <body>
+    <div class="desktop">
+        <div class="wrapper">
+            <div class="grid-container">
+                <!-- Tạo 180 ô -->
+                <script>
+                    initDesktop()
+                    addShortcut()
+                </script>
+            </div>
+            <div class="bottom-space"></div>
+        </div>
+    </div>
+
     <div class="taskbar glass-container">
         <div class="center-group">
-            <div class="taskbar-icon">
+            <a href="#" class="taskbar-icon" role="button">
                 <div class="taskbar-icon-img">
                     <img src="./src/imgs/win11icon128.png" alt="">
                 </div>
-            </div>
+            </a>
             <div class="searchBar">
                 <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" autocomplete="off" />
             </div>
@@ -51,7 +65,6 @@
                 <p id="current-date" style="user-select: none;">date</p>
             </div>
         </div>
-
       </div>
       <script src="./src/js/index.js"></script>
   </body>
