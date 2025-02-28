@@ -5,14 +5,38 @@
     <title>Windows 11</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="icon" href="./src/imgs/win11icon128.png" type="image/x-icon">
+    
   </head>
   <body>
-    <div class="taskbar">
-        <div class="taskbar-icon">
-            <div class="taskbar-icon-img">
-                <img src="./src/imgs/win11icon128.png" alt="">
+    <div class="taskbar glass-container">
+        <div class="center-group">
+            <div class="taskbar-icon">
+                <div class="taskbar-icon-img">
+                    <img src="./src/imgs/win11icon128.png" alt="">
+                </div>
+            </div>
+            <div class="searchBar">
+                <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" autocomplete="off" />
+            </div>
+            <div class="taskbar-icon">
+                <div class="taskbar-icon-img">
+                    <img src="./src/imgs/winstoreicon128.png" alt="">
+                </div>
+            </div>
+            <div class="taskbar-icon">
+                <div class="taskbar-icon-img">
+                    <img src="./src/imgs/chromeicon128.png" alt="">
+                </div>
             </div>
         </div>
+        <div class="clock">
+            <div class="clock-info">
+                <p id="current-time" style="user-select: none;">11:35 SA</p>
+                <p id="current-date" style="user-select: none;">28/02/2025</p>
+            </div>
+        </div>
+
       </div>
+      <script src="./src/js/index.js"></script>
   </body>
 </html>
