@@ -12,7 +12,7 @@ setInterval(()=>{
   }).format(d);
 },1000)
 
-const modal = document.getElementById("modal-form");
+const modal = document.getElementById("start-form");
 const m = document.getElementById('startModal')
 const startButton = document.getElementById('startButton')
 // Lắng nghe sự kiện click trên cửa sổ (window)
