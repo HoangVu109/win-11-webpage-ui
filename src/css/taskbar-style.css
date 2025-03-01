@@ -122,12 +122,18 @@ body {
         justify-items: end;
         padding-left: 2%;
         text-align: right;
-        p{
+        #current-time{
             width: max-content;
             text-align: right;
-            padding: 0.2vh 1vh 0.2vh 1vh;
+            padding: 0.4vh 1vh 0 1vh;
             margin: 0;
         }
+        #current-date{
+          width: max-content;
+          text-align: right;
+          padding: 0 1vh 0.4vh 1vh;
+          margin: 0;
+      }
     }
     
 }

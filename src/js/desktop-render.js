@@ -33,15 +33,19 @@ function addDesktopShortcut(){
     });
 
 
+    addShortcutToIndex({
+        iconPath: './src/imgs/profileicon128.png',
+        shortcutName: 'My Infomation',
+    },10)
 
     addShortcutToIndex({
         iconPath: './src/imgs/foldericon128.png',
-        shortcutName: 'My skills',
-    },10)
+        shortcutName: 'My Skills',
+    },11)
     addShortcutToIndex({
         iconPath: './src/imgs/foldericon128.png',
         shortcutName: 'My Projects',
-    },11)
+    },12)
 
     addShortcutToIndex({
         iconPath : './src/imgs/githubicon128.png',
