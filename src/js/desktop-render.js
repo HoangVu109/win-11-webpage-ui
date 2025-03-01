@@ -8,7 +8,7 @@ function initDesktop(){
     }
 }
 
-function addShortcut(){
+function addDesktopShortcut(){
     shortcuts = [ 
         {
             iconPath : './src/imgs/facebookicon128.png',
@@ -54,10 +54,10 @@ function addShortcut(){
 function addShortcutToIndex(shortcut ,i) {
     elem = document.getElementById(`cell-${i}`)
     if(shortcut.hasOwnProperty('link')) {
-        elem.setAttribute('href',shortcut.link)
-        elem.setAttribute('target','_blank')
+        elem.setAttribute('onClick',`openUrl('${shortcut.link}')`)
+        elem.setAttribute('role','button')
     } else {
-        elem.setAttribute('href','#')
+        //elem.setAttribute('href','#')
         elem.setAttribute('role','button')
     }
     elem.innerHTML =  `<img src=${shortcut.iconPath} alt=""> <p class='shorcutName'>${shortcut.shortcutName}</p>`

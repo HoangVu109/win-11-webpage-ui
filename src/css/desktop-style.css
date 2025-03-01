@@ -50,6 +50,9 @@
     user-select: none;
 }
 
-.grid-item[href]:hover {
+.grid-item[role]:hover {
+    background: rgba(244, 244, 244, 0.116);
+}
+.grid-item[onClick]:hover {
     background: rgba(244, 244, 244, 0.116);
 }

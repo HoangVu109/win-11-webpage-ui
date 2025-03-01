@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/css/start-style.css">
     <link rel="icon" href="./src/imgs/win11icon128.png" type="image/x-icon">
     <script src="./src/js/desktop-render.js"></script>
+    <script src="./src/js/taskbar-render.js"></script>
   </head>
   <body>
     <div class="desktop">
@@ -15,7 +16,7 @@
             <div class="grid-container">
                 <script>
                     initDesktop()
-                    addShortcut()
+                    addDesktopShortcut()
                 </script>
             </div>
             <div class="bottom-space"></div>
@@ -28,14 +29,14 @@
             </div>
             <div class="start-bottom">
                     <div class="start-profile">
-
+                        
                     </div>
             </div>
         </div>
     </div>
     <div class="taskbar glass-container">
         <div class="center-group">
-            <a href="#" class="taskbar-icon" id="startButton" role="button" onclick="showStart()">
+            <a class="taskbar-icon" id="startButton" role="button" onclick="showStart()">
                 <div class="taskbar-icon-img">
                     <img src="./src/imgs/win11icon128.png" alt="">
                 </div>
@@ -49,26 +50,14 @@
                     <img src="./src/imgs/winstoreicon128.png" alt="">
                 </div>
             </div>
-            <a href="https://google.com" target="_blank" class="taskbar-icon">
+            <div role="button" onclick="openUrl('https://www.google.com/')" class="taskbar-icon">
                 <div class="taskbar-icon-img">
                     <img src="./src/imgs/chromeicon128.png" alt="">
                 </div>
-            </a>
-            <a href="https://github.com/HoangVu109" target="_blank" class="taskbar-icon">
-                <div class="taskbar-icon-img">
-                    <img src="./src/imgs/githubicon128.png" alt="">
-                </div>
-            </a>
-            <a href="https://www.facebook.com/vvhoang109" target="_blank" class="taskbar-icon">
-                <div class="taskbar-icon-img">
-                    <img src="./src/imgs/facebookicon128.png" alt="">
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/in/hoangvu109/" target="_blank" class="taskbar-icon">
-                <div class="taskbar-icon-img">
-                    <img src="./src/imgs/linkedicon128.png" alt="">
-                </div>
-            </a>
+            </div>
+            <script>
+                initTaskbar()
+            </script>
         </div>
         <div class="clock">
             <div class="clock-info">
