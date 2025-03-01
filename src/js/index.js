@@ -12,3 +12,27 @@ setInterval(()=>{
   }).format(d);
 },1000)
 
+const modal = document.getElementById("modal-form");
+const m = document.getElementById('startModal')
+const startButton = document.getElementById('startButton')
+// Lắng nghe sự kiện click trên cửa sổ (window)
+window.onclick = function (event) {
+    console.log(modal.contains(event.target));
+    if(event.target == startButton || startButton.contains(event.target)) return;
+    else if (event.target != modal && !modal.contains(event.target)) {
+        m.style.setProperty('display','none')
+    }
+
+}
+
+function showStart() {
+  value = m.style.getPropertyValue('display')
+  console.log(value + (value == 'flex'));
+  
+  if(value === 'flex') {
+    m.style.setProperty('display','none')
+  } else {
+    m.style.setProperty('display','flex')
+  }
+   
+}

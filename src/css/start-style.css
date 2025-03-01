@@ -1,0 +1,22 @@
+#startModal {
+    /* Ẩn modal mặc định */
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    bottom: 7vh;
+}
+
+.modal-content {
+    padding: 10px;
+    width: 41%;
+    height: 83vh;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+

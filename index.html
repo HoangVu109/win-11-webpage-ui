@@ -5,6 +5,7 @@
     <title>Windows 11</title>
     <link rel="stylesheet" href="./src/css/taskbar-style.css">
     <link rel="stylesheet" href="./src/css/desktop-style.css">
+    <link rel="stylesheet" href="./src/css/start-style.css">
     <link rel="icon" href="./src/imgs/win11icon128.png" type="image/x-icon">
     <script src="./src/js/desktop-render.js"></script>
   </head>
@@ -20,10 +21,14 @@
             <div class="bottom-space"></div>
         </div>
     </div>
-
+    <div id="startModal" class="modal">
+        <div class="modal-content glass-container" id="modal-form">
+            <h2 style="color: white;">Start menu</h2>
+        </div>
+    </div>
     <div class="taskbar glass-container">
         <div class="center-group">
-            <a href="#" class="taskbar-icon" role="button">
+            <a href="#" class="taskbar-icon" id="startButton" role="button" onclick="showStart()">
                 <div class="taskbar-icon-img">
                     <img src="./src/imgs/win11icon128.png" alt="">
                 </div>
@@ -65,6 +70,8 @@
             </div>
         </div>
       </div>
+
+
       <script src="./src/js/index.js"></script>
   </body>
 </html>
