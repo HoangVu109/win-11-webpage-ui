@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
   }
 
   .glass-container {
@@ -93,7 +93,7 @@ body {
     outline: none;
     border: none;
     border-radius: 0.925vw;
-    padding: 0 10% 0 10%;
+    padding: 0 10% 0 2.5vw;
     font-size: 1.7vh;
     color: white;
   }

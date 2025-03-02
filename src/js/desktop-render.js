@@ -35,7 +35,7 @@ function addDesktopShortcut(){
 
     addShortcutToIndex({
         iconPath: './src/imgs/profileicon128.png',
-        shortcutName: 'My Infomation',
+        shortcutName: 'My Information',
     },10)
 
     addShortcutToIndex({
@@ -53,6 +53,11 @@ function addDesktopShortcut(){
         link: 'https://github.com/HoangVu109/win-11-webpage-ui'
              
     },180)
+    addShortcutToIndex({
+        iconPath : './src/imgs/xmlicon128.png',
+        shortcutName: 'About this web',
+             
+    },171)
 }
 
 function addShortcutToIndex(shortcut ,i) {
