@@ -8,6 +8,7 @@ body {
     padding: 0;
     height: 100%;
     overflow: hidden;
+    user-select: none;
   }
 
   .glass-container {
@@ -139,8 +140,8 @@ body {
 }
 
 .taskbar-icon-img img {
-    height: 61%; /* Chiếm 40% chiều cao của taskbar */
-    width: auto; /* Giữ tỉ lệ */
+    height: 61%;
+    width: auto;
 }
 
 .taskbar-icon-img :hover {

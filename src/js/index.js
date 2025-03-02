@@ -40,3 +40,8 @@ function showStart() {
 function openUrl(url) {
   window.open(url, '_blank');
 }
+
+
+function closeWindow() {
+  document.documentElement.innerHTML = ""
+}
