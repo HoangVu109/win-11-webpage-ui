@@ -3,7 +3,7 @@ function addShortcut(shortcut) {
     console.log(shortcut);
     
     if(shortcut.hasOwnProperty('link')) {
-        url = "openUrl("+shortcut.link+")"
+        url = "openUrl(\'"+shortcut.link+"\');"
     }    
     document.write(`
         <div role="button" onclick="${url}" class="taskbar-icon">
